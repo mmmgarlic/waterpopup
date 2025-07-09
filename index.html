@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thirsty Robot: The Game</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    <link rel="icon" type="image/png" href="https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/b5ecd7f7b68682bc123c7c344be86f.webp?v=1737738527392">
+</head>
+
+<body>
+  <!-- DA BACKGROUND -->
+  <div id="background-container">
+    <div id="background"></div>
+  </div>
+
+<div id="splash-screen">
+  <div id="menu">
+    <h1>Thirsty Robot: The Game</h1>
+        <div id="gif-container"></div>
+    <p>Race against the clock – mop up the flood, and discover the secret of the spill!</p>
+ <!-- GIF CONTAINER!!! -->
+    <button id="play-button">Play</button>
+    <button id="leaderboard-button">Leaderboard</button>
+  </div>
+    <div id="about-link">
+      <a href="https://thirstyrobots.glitch.me/" target="_blank" style="font-family: 'Pinyon Script', cursive; color: yellow; font-size: 1.5rem; position: absolute; bottom: 1.5rem; right: 1.2rem;">About Thirsty Robot</a>
+    </div></div>
+
+  <!-- TIMER -->
+  <div id="timer">
+    <span id="time-label">Time:</span>
+    <span id="time-value">00.00</span>
+  </div>
+
+  <!-- CONGRATZZZ -->
+  <div id="congrats-screen" style="display: none;">
+    <div id="congrats-screen-gifs"></div>
+    <h2>You mopped it all up!</h2>
+    <p>Good job! Unfortunately, it looks like the flood won't be stopping anytime soon...</p>
+    <p>Add your name and timing to the leaderboard:</p>
+    <input type="text" id="name-input" autocomplete="off" placeholder="Enter your name">
+    <p>Your time: <span id="final-time"></span></p>
+     <button id="backreload-button">Back</button>
+    <button id="submit-score-button">Submit</button>
+  </div>
+
+<div id="leaderboard-screen" style="display: none;">
+  <h2>Leaderboard</h2>
+  <div id="gif-leaderboard-container">
+    <div id="gif-left-column"></div> 
+    <div id="gif-right-column"></div> 
+  </div>
+  <div id="leaderboard-container">
+
+    <ul id="leaderboard"></ul>
+  </div>
+  <p>(Scroll to view more!)</p>
+  <button id="back-button">Back</button>
+</div>
+
+
+  <div id="click-message" style="display: none; font-family: 'Pinyon Script', cursive; font-size: 5em; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    Quick!Click, click, click!
+</div>
+  
+  <!-- DA FLOOD -->
+  <svg id="flood" viewBox="0 24 150 450" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v450h-352z" />
+      <pattern id="water" patternUnits="userSpaceOnUse" width="314" height="98">
+        <image xlink:href="https://melonking.net/images/flood-water.png" x="0" y="0" width="314" height="98"></image>
+      </pattern>
+    </defs>
+    <g class="wave">
+      <use xlink:href="#gentle-wave" x="48" y="0" />
+      <use xlink:href="#gentle-wave" x="48" y="3" />
+      <use xlink:href="#gentle-wave" x="48" y="5" />
+    </g>
+  </svg>
+
+  <div id="flood-menu">
+    <span id="flood-message"></span>
+    <button onclick="doBilge()">Bilge Water</button>
+  </div>
+  
+  <script src="script.js" type="module"></script>
+  
+  <script>
+  function notifyMainWindow() {
+    if (window.opener && !window.opener.closed) {
+      window.opener.postMessage("user-active", "*");
+    }
+  }
+
+  document.addEventListener("mousemove", notifyMainWindow);
+  document.addEventListener("click", notifyMainWindow);
+  document.addEventListener("keydown", notifyMainWindow);
+</script>
+
+</body>
+</html>
