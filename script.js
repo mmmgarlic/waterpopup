@@ -118,110 +118,106 @@ document.getElementById("name-input").addEventListener("keydown", (event) => {
 });
   
 const popupbackgrounds = [
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/anim_waterlelie.gif?v=1737413717412",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-aquarium-and-fish-bowl-image-0003.gif?v=1737413718929",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-beach-image-0023.gif?v=1737413721899",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-fish-image-0176.gif?v=1737413724036",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-fish-image-0243.gif?v=1737413726218",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-fish-image-0365.gif?v=1737413728775",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-gifs-water-04.gif.pagespeed.ce.aif_akUFqd.gif?v=1737413731630",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-gifs-water-14.gif.pagespeed.ce.dInbfYuKnv.gif?v=1737413733850",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-gifs-waterfalls-03.gif.pagespeed.ce.xfjchK8Hjn.gif?v=1737413736142",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-gifs-waterfalls-04.gif?v=1737413738723",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-gifs-waterfalls-05.gif?v=1737413741993",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-gifs-waterfalls-26.gif?v=1737413744616",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-gifs-waterfalls-30.gif.pagespeed.ce.I22ZfP6D3H.gif?v=1737413749992",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-waterfall-image-0004.gif?v=1737413752409",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-waterfall-image-0009.gif?v=1737413755152",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-waterfall-image-0015.gif?v=1737413763215",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-waterfall-image-0016.gif?v=1737413771923",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-waterfall-image-0021.gif?v=1737413774273",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-whale-image-0022.gif?v=1737413778310",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animatedwater_swan_sh.gif?v=1737413782504",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/autumlakeflowingwater.gif?v=1737413784584",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/DeerandWater.gif?v=1737413787766",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/dolfijn-water-mb_1_.gif?v=1737413791328",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/Dolphins_in_water.gif?v=1737413794367",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/moving_waterall__new_.gif?v=1737413798382",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/water_drop.gif?v=1737413801360",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/water-glass-drip.gif?v=1737413804606",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/water028.gif?v=1737413808377",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/water60.gif?v=1737413813946",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/waterbackground.gif?v=1737413815508",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/Waterf_1.gif?v=1737413818993",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/waterkarin.gif?v=1737413822213",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/waternight.gif?v=1737413827087"];
-
-const assets = [
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-aquarium-and-fish-bowl-image-0019.gif?v=1737413240601",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-aquarium-and-fish-bowl-image-0022.gif?v=1737413244509",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-fish-image-0002.gif?v=1737413534289",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-fish-image-0019.gif?v=1737413548004",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-fish-image-0029.gif?v=1737413561152",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-fish-image-0036.gif?v=1737413585728",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-fish-image-0037.gif?v=1737413587657",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-fish-image-0056.gif?v=1737413590625",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-fish-image-0241.gif?v=1737413593694",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-fish-image-0312.gif?v=1737413599201",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-fish-image-0353.gif?v=1737413601685",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-fish-image-0355.gif?v=1737413605719",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-fish-image-0412.gif?v=1737413608628",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-fish-image-0553.gif?v=1737413611427",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-fish-image-0575.gif?v=1737413614187",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-gifs-water-08.gif.pagespeed.ce.3E1kOGvmus.gif?v=1737413622493",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-jellyfish-image-0007.gif?v=1737413638893",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-shark-image-0027.gif?v=1737413642777",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-shark-image-0028.gif?v=1737413646103",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-shark-image-0030.gif?v=1737413649406",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-shark-image-0051.gif?v=1737413653673",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-shark-image-0085.gif?v=1737413657316",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-starfish-image-0004.gif?v=1737413660936",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-water-sports-image-0001.gif?v=1737413664130",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-water-sports-image-0012.gif?v=1737413667789",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-water-sports-image-0025.gif?v=1737413673092",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-water-sports-image-0053.gif?v=1737413676776",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/animated-whale-image-0017.gif?v=1737413680095",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bloodhound_shaking_off_water_lg_clr.gif?v=1737413683362",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/globo_waterfairy.gif?v=1737413686550",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/porthole.gif?v=1737413689982",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/water.gif?v=1737413692695",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/watereggreal.gif?v=1737413696423",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/waterplant.gif?v=1737413700187"];
-
-const soundEffects = [
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bucketsoundfx01.wav?v=1737395811861",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bucketsoundfx02.wav?v=1737395815594",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bucketsoundfx03.wav?v=1737395817559",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bucketsoundfx04.wav?v=1737395820247",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bucketsoundfx05.wav?v=1737395822823",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bucketsoundfx06.wav?v=1737395825464",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bucketsoundfx07.wav?v=1737395828593",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bucketsoundfx08.wav?v=1737395832445",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bucketsoundfx09.wav?v=1737395835763",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bucketsoundfx10.wav?v=1737395838387",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bucketsoundfx11.wav?v=1737395841255",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bucketsoundfx12.wav?v=1737395845611",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bucketsoundfx13.wav?v=1737395848841",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bucketsoundfx14.wav?v=1737395851755",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bucketsoundfx15.wav?v=1737395854770",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bucketsoundfx16.wav?v=1737395858259",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bucketsoundfx17.wav?v=1737395861519",
-  "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/bucketsoundfx18.wav?v=1737395864518"
+  "./popupbackground/DeerandWater.gif",
+  "./popupbackground/Dolphins_in_water.gif",
+  "./popupbackground/Waterf_1.gif",
+  "./popupbackground/anim_waterlelie.gif",
+  "./popupbackground/animated-aquarium-and-fish-bowl-image-0003.gif",
+  "./popupbackground/animated-beach-image-0023.gif",
+  "./popupbackground/animated-fish-image-0176.gif",
+  "./popupbackground/animated-fish-image-0243.gif",
+  "./popupbackground/animated-fish-image-0365.gif",
+  "./popupbackground/animated-gifs-water-04.gif.pagespeed.ce.aif_akUFqd.gif",
+  "./popupbackground/animated-gifs-water-14.gif.pagespeed.ce.dInbfYuKnv.gif",
+  "./popupbackground/animated-gifs-waterfalls-03.gif.pagespeed.ce.xfjchK8Hjn.gif",
+  "./popupbackground/animated-gifs-waterfalls-04.gif",
+  "./popupbackground/animated-gifs-waterfalls-05.gif",
+  "./popupbackground/animated-gifs-waterfalls-26.gif",
+  "./popupbackground/animated-gifs-waterfalls-30.gif.pagespeed.ce.I22ZfP6D3H.gif",
+  "./popupbackground/animated-waterfall-image-0004.gif",
+  "./popupbackground/animated-waterfall-image-0009.gif",
+  "./popupbackground/animated-waterfall-image-0015.gif",
+  "./popupbackground/animated-waterfall-image-0016.gif",
+  "./popupbackground/animated-waterfall-image-0021.gif",
+  "./popupbackground/animated-whale-image-0022.gif",
+  "./popupbackground/animatedwater_swan_sh.gif",
+  "./popupbackground/autumlakeflowingwater.gif",
+  "./popupbackground/dolfijn-water-mb_1_.gif",
+  "./popupbackground/moving_waterall__new_.gif",
+  "./popupbackground/water_drop.gif",
+  "./popupbackground/water-glass-drip.gif",
+  "./popupbackground/water028.gif",
+  "./popupbackground/water60.gif",
+  "./popupbackground/waterbackground.gif",
+  "./popupbackground/waterkarin.gif",
+  "./popupbackground/waternight.gif"
 ];
 
-const congratssoundeffect="https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/ta-da_yrvBrlS.mp3?v=1737560317366"
+const assets = [
+  "./assets/animated-aquarium-and-fish-bowl-image-0019.gif",
+  "./assets/animated-aquarium-and-fish-bowl-image-0022.gif",
+  "./assets/animated-fish-image-0002.gif",
+  "./assets/animated-fish-image-0019.gif",
+  "./assets/animated-fish-image-0029.gif",
+  "./assets/animated-fish-image-0036.gif",
+  "./assets/animated-fish-image-0037.gif",
+  "./assets/animated-fish-image-0056.gif",
+  "./assets/animated-fish-image-0241.gif",
+  "./assets/animated-fish-image-0312.gif",
+  "./assets/animated-fish-image-0353.gif",
+  "./assets/animated-fish-image-0355.gif",
+  "./assets/animated-fish-image-0412.gif",
+  "./assets/animated-fish-image-0553.gif",
+  "./assets/animated-fish-image-0575.gif",
+  "./assets/animated-gifs-water-08.gif.pagespeed.ce.3E1kOGvmus.gif",
+  "./assets/animated-jellyfish-image-0007.gif",
+  "./assets/animated-shark-image-0027.gif",
+  "./assets/animated-shark-image-0028.gif",
+  "./assets/animated-shark-image-0030.gif",
+  "./assets/animated-shark-image-0051.gif",
+  "./assets/animated-shark-image-0085.gif",
+  "./assets/animated-starfish-image-0004.gif",
+  "./assets/animated-water-sports-image-0001.gif",
+  "./assets/animated-water-sports-image-0012.gif",
+  "./assets/animated-water-sports-image-0025.gif",
+  "./assets/animated-water-sports-image-0053.gif",
+  "./assets/animated-whale-image-0017.gif",
+  "./assets/bloodhound_shaking_off_water_lg_clr.gif",
+  "./assets/globo_waterfairy.gif",
+  "./assets/porthole.gif",
+  "./assets/water.gif",
+  "./assets/watereggreal.gif",
+  "./assets/waterplant.gif"
+];
+
+const soundEffects = [
+  "./bucket%20sound%20effect/bucketsoundfx01.wav",
+  "./bucket%20sound%20effect/bucketsoundfx02.wav",
+  "./bucket%20sound%20effect/bucketsoundfx03.wav",
+  "./bucket%20sound%20effect/bucketsoundfx04.wav",
+  "./bucket%20sound%20effect/bucketsoundfx05.wav",
+  "./bucket%20sound%20effect/bucketsoundfx06.wav",
+  "./bucket%20sound%20effect/bucketsoundfx07.wav",
+  "./bucket%20sound%20effect/bucketsoundfx08.wav",
+  "./bucket%20sound%20effect/bucketsoundfx09.wav",
+  "./bucket%20sound%20effect/bucketsoundfx10.wav",
+  "./bucket%20sound%20effect/bucketsoundfx11.wav",
+  "./bucket%20sound%20effect/bucketsoundfx12.wav",
+  "./bucket%20sound%20effect/bucketsoundfx13.wav",
+  "./bucket%20sound%20effect/bucketsoundfx14.wav",
+  "./bucket%20sound%20effect/bucketsoundfx15.wav",
+  "./bucket%20sound%20effect/bucketsoundfx16.wav",
+  "./bucket%20sound%20effect/bucketsoundfx17.wav",
+  "./bucket%20sound%20effect/bucketsoundfx18.wav"
+];
+
+const congratssoundeffect = "./congrats%20sound%20effect.mp3";
 
 
 window.addEventListener("load", () => {
-
-  const backgrounds = [
-    "https://cdn.glitch.global/bcd14a2b-fffd-406f-8a0c-f0ccc8eaea6f/cc025338.jpg?v=1738177746235"];
-  
   const bgContainer = document.getElementById("background");
   if (bgContainer) {
-    bgContainer.style.backgroundImage = `url(${backgrounds[0]})`;
-  } else {
-    console.error("Background container not found!");
+    bgContainer.style.backgroundImage = "url('./background.jpg')";
   }
 });
 
